@@ -10,9 +10,9 @@
         android:layout_height="60dp"
         android:text="CALCULATOR"
         android:textSize="50dp"
-        android:background="#FF0"
+        android:background="@color/black"
         android:layout_margin="2dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         tools:ignore="HardcodedText,SpUsage" />
 
     <EditText
@@ -21,15 +21,17 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
+        android:background="@color/white"
         android:gravity="right|center"
         android:inputType="number"
         android:text="0"
         android:textSize="70dp"
-        tools:ignore="Autofill,DuplicateSpeakableTextCheck,HardcodedText,InefficientWeight,LabelFor,RtlHardcoded,SpUsage" />
+        />
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/black"
         >
 
         <TableRow
@@ -39,42 +41,44 @@
             <Button
                 android:id="@+id/btnac"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:onClick="clearevent"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+
                 android:backgroundTint="@color/black"
                 android:text="ac"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
-                >
+
+                style="?android:attr/buttonBarButtonStyle">
 
 
             </Button>
             <Button
                 android:id="@+id/clear"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:onClick="clear"
+                android:textSize="25dp"
                 android:backgroundTint="@color/black"
                 android:text="Clear"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
+
                 >
 
 
             </Button>
-           
 
-
-            </Button>
             <Button
                 android:id="@+id/btndiv"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:onClick="operatorevent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/black"
                 android:text="/"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
+                android:textSize="25dp"
+
                 >
 
 
@@ -93,38 +97,42 @@
             <Button
                 android:id="@+id/btn7"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:onClick="numberevent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/black"
                 android:text="7"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
-                >
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                style="?android:attr/buttonBarButtonStyle">
 
 
             </Button>
             <Button
                 android:id="@+id/btn8"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:onClick="numberevent"
                 android:layout_weight="1"
+                android:textSize="25dp"
                 android:backgroundTint="@color/black"
                 android:text="8"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
-                >
+                android:textColor="@color/white"
+
+                style="?android:attr/buttonBarButtonStyle">
 
 
             </Button>
             <Button
                 android:id="@+id/btn9"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
+                android:textSize="25dp"
                 android:onClick="numberevent"
                 android:backgroundTint="@color/black"
                 android:text="9"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
+
                 >
 
 
@@ -132,12 +140,13 @@
             <Button
                 android:id="@+id/btnX"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
+                android:textSize="25dp"
                 android:onClick="operatorevent"
                 android:backgroundTint="@color/black"
                 android:text="X"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
+
                 >
 
 
@@ -155,27 +164,32 @@
 
             <Button
                 android:id="@+id/btn4"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
-                android:onClick="numberevent"
+                android:textSize="25dp"
                 android:backgroundTint="@color/black"
+                android:onClick="numberevent"
+                android:textColor="@color/white"
+
                 android:text="4"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
-                >
+                tools:ignore="TextContrastCheck">
 
 
             </Button>
             <Button
                 android:id="@+id/btn5"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
+                android:textSize="25dp"
                 android:onClick="numberevent"
                 android:backgroundTint="@color/black"
                 android:text="5"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
-                >
+                android:textColor="@color/white"
+
+                style="?android:attr/buttonBarButtonStyle">
 
 
             </Button>
@@ -183,24 +197,27 @@
             <Button
                 android:id="@+id/btn6"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
+                android:textSize="25dp"
                 android:backgroundTint="@color/black"
                 android:onClick="numberevent"
                 android:text="6"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck">
+                android:textColor="@color/white"
+                style="?android:attr/buttonBarButtonStyle">
 
 
             </Button>
             <Button
                 android:id="@+id/btnmin"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
+                android:textSize="25dp"
                 android:onClick="operatorevent"
                 android:backgroundTint="@color/black"
                 android:text="-"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
+
                 >
 
 
@@ -218,39 +235,44 @@
             <Button
                 android:id="@+id/btn1"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
+                android:textSize="25dp"
                 android:onClick="numberevent"
                 android:backgroundTint="@color/black"
                 android:text="1"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
-                >
+                android:textColor="@color/white"
+
+                style="?android:attr/buttonBarButtonStyle">
 
 
             </Button>
             <Button
                 android:id="@+id/btn2"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
+                android:textSize="25dp"
                 android:onClick="numberevent"
                 android:backgroundTint="@color/black"
                 android:text="2"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
-                >
+                android:textColor="@color/white"
+
+                style="?android:attr/buttonBarButtonStyle">
 
 
             </Button>
             <Button
                 android:id="@+id/btn3"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
+                android:textSize="25dp"
                 android:onClick="numberevent"
                 android:backgroundTint="@color/black"
                 android:text="3"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
-                >
+                android:textColor="@color/white"
+                style="?android:attr/buttonBarButtonStyle">
 
 
             </Button>
@@ -258,12 +280,13 @@
             <Button
                 android:id="@+id/btnplus"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
+                android:textSize="25dp"
                 android:backgroundTint="@color/black"
                 android:onClick="operatorevent"
                 android:text="+"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck">
+                >
 
 
             </Button>
@@ -281,26 +304,30 @@
             <Button
                 android:id="@+id/btn0"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
+                android:textSize="25dp"
                 android:onClick="numberevent"
                 android:backgroundTint="@color/black"
                 android:text="0"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
-                >
+                android:textColor="@color/white"
+
+                style="?android:attr/buttonBarButtonStyle">
 
 
             </Button>
             <Button
                 android:id="@+id/btndot"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
+                android:textSize="25dp"
                 android:onClick="numberevent"
                 android:backgroundTint="@color/black"
                 android:text="."
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
-                >
+                android:textColor="@color/white"
+
+                style="?android:attr/buttonBarButtonStyle">
 
 
             </Button>
@@ -311,13 +338,14 @@
             <Button
                 android:id="@+id/btnequal"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
-                android:onClick="equalevent"
+                android:textSize="25dp"
                 android:backgroundTint="@color/black"
                 android:text="="
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
-                >
+                android:textColor="@color/white"
+
+                style="?android:attr/buttonBarButtonStyle">
 
 
             </Button>
