@@ -23,6 +23,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.editbutton.isFocusable=false
         binding.editbutton.isClickable=false
+          binding.btnequal.setOnClickListener {
+            equalevent()
+        }
+        binding.btnac.setOnClickListener{
+            clearevent()
+        }
+        binding.clear.setOnClickListener{
+            clear()
+        }
 
     }
 
