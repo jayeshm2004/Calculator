@@ -62,16 +62,7 @@
 
 
             </Button>
-            <Button
-                android:id="@+id/btnrem"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:onClick="operatorevent"
-                android:backgroundTint="@color/black"
-                android:text="%"
-                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck"
-                >
+           
 
 
             </Button>
