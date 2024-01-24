@@ -52,7 +52,6 @@ class MainActivity : AppCompatActivity() {
             "+"->firstoperand+secondoperand
             "-"->firstoperand-secondoperand
             "X"->firstoperand*secondoperand
-            "%"->firstoperand/100
             "/"->{
                 if (secondoperand!=0.0){
                     firstoperand/secondoperand
